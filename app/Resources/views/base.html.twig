@@ -1,13 +1,50 @@
+<!-- app/Resources/views/base.html.twig -->
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+        <title>{% block title %}Test site{% endblock %}</title>
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        {% block stylesheets %}
+            <link href='http://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+            <link href="{{ asset('css/base.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+
+        <section id="wrapper">
+            <header id="header">
+                <div class="top">
+                    {% block navigation %}
+                        <nav>
+                            <ul class="navigation">
+                                <li><a href="{{ path('fos_user_security_login') }}">Sign in</a></li>
+                                <li><a href="{{ path('fos_user_registration_register') }}">Register</a></li>
+                            </ul>
+                        </nav>
+                    {% endblock %}
+                </div>
+
+                <hgroup>
+                    <h2>{% block user_title %}<a href="{{ path('AcmeUserBundle_homepage') }}">Test site</a>{% endblock %}</h2>
+                </hgroup>
+            </header>
+
+            <section class="main-col">
+                {% block body %}{% endblock %}
+            </section>
+
+            <div id="footer">
+                {% block footer %}
+                    Test site - Created by Myagkov A.V.
+                {% endblock %}
+            </div>
+        </section>
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>

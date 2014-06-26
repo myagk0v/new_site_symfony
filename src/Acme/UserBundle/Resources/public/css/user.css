@@ -1,0 +1,30 @@
+.fos_user_registration_register-notice { text-align: center; padding: 10px; background: #DFF2BF; border: 1px solid; color: #4F8A10; margin-bottom: 10px; }
+form.fos_user_registration_register { font-size: 16px; }
+form.fos_user_registration_register div { clear: left; margin-bottom: 10px; }
+form.fos_user_registration_register label { float: left; margin-right: 10px; text-align: right; width: 100px; font-weight: bold; vertical-align: top; padding-top: 10px; }
+form.fos_user_registration_register input[type="text"],
+form.fos_user_registration_register input[type="email"],
+form.fos_user_registration_register input[type="password"]
+    { width: 500px; line-height: 26px; font-size: 20px; min-height: 26px; }
+form.fos_user_registration_register textarea { width: 500px; height: 150px; line-height: 26px; font-size: 20px; }
+form.fos_user_registration_register input[type="submit"] { margin-left: 110px; width: 508px; line-height: 26px; font-size: 20px; min-height: 26px; }
+form.fos_user_registration_register ul li { color: #ff0000; margin-bottom: 5px; }
+
+.user-form-notice { text-align: center; padding: 10px; background: #DFF2BF; border: 1px solid; color: #4F8A10; margin-bottom: 10px; }
+form.user-form { font-size: 16px; }
+form.user-form div { clear: left; margin-bottom: 10px; }
+form.user-form label { float: left; margin-right: 10px; text-align: right; width: 100px; font-weight: bold; vertical-align: top; padding-top: 10px; }
+form.user-form input[type="text"],
+form.user-form input[type="email"],
+form.user-form input[type="password"]
+    { width: 500px; line-height: 26px; font-size: 20px; min-height: 26px; }
+form.user-form input[type="checkbox"] {
+    width: 30px;
+    margin: 0px 480px 0px 0px;
+    line-height: 26px;
+    font-size: 20px;
+    min-height: 26px;
+}
+form.user-form textarea { width: 500px; height: 150px; line-height: 26px; font-size: 20px; }
+form.user-form input[type="submit"] { margin-left: 110px; width: 508px; line-height: 26px; font-size: 20px; min-height: 26px; }
+form.user-form ul li { color: #ff0000; margin-bottom: 5px; }

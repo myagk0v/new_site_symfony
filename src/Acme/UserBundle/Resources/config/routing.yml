@@ -1,0 +1,6 @@
+# src/Acme/UserBundle/Resources/config/routing.yml
+AcmeUserBundle_homepage:
+    pattern:  /
+    defaults: { _controller: AcmeUserBundle:Page:index }
+    requirements:
+        _method:  GET

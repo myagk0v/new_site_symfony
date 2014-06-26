@@ -1,0 +1,12 @@
+{% extends 'AcmeUserBundle::layout.html.twig' %}
+
+{% block title %}Registration{% endblock%}
+
+{% block body %}
+    <header>
+        <h1>Register for a new account</h1>
+    </header>
+    {% block fos_user_content %}
+    {% include "FOSUserBundle:Registration:register_content.html.twig" %}
+    {% endblock fos_user_content %}
+{% endblock %}
