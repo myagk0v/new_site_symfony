@@ -1,0 +1,13 @@
+# Acme/UserBundle/Resources/config/admin.yml
+services:
+    sonata.admin.post:
+        class: Acme\UserBundle\Admin\UsersAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Users" }
+        arguments:
+            - ~
+            - Acme\UserBundle\Entity\Users
+            - AcmeUserBundle:UsersAdmin
+        calls:
+            - [ setTranslationDomain, [AcmeUserBundle]]
+            

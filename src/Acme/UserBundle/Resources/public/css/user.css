@@ -28,3 +28,8 @@ form.user-form input[type="checkbox"] {
 form.user-form textarea { width: 500px; height: 150px; line-height: 26px; font-size: 20px; }
 form.user-form input[type="submit"] { margin-left: 110px; width: 508px; line-height: 26px; font-size: 20px; min-height: 26px; }
 form.user-form ul li { color: #ff0000; margin-bottom: 5px; }
+
+form.fos_user_profile_edit input[type="text"],
+form.fos_user_profile_edit input[type="email"],
+form.fos_user_profile_edit input[type="password"]
+    { width: 500px; line-height: 26px; font-size: 20px; min-height: 26px; }
